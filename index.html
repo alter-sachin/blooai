@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="Hugo 0.112.5">
+    <title>Bloo.AI blog</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+
+    
+
+    
+
+<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+
+
+<main>
+  <h1 class="visually-hidden" id="home">Headers examples</h1>
+
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        
+        <span class="fs-4"><img src="./logo.png" class="me-2" width="120" height=""></img></span>
+      </a>
+
+      <ul class="nav nav-pills py-3 mb-4">
+        <li class="nav-item"><a href="#book" class="nav-link active" aria-current="page">Book Demo</a></li>
+        
+        
+      </ul>
+    </header>
+  </div>
+
+  
+
+ 
+
+ 
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <video width="100%;" height="auto" controls autoplay muted loop>
+          <source src="./home1.mp4" type="video/mp4">
+         
+        Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Enterprise Solutions for Metaverse & AI</h1>
+        <p class="lead">Bloo.AI helps you transform Sales and Marketing Impact with personalised AI and Photorealistic Metaverse solutions</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="#book"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Book Demo</button></a>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!--  <div class="container col-xxl-8 px-4 py-5">
+    
+    <div class="row">
+
+      <div class="col-lg-2 col-md-2 col-xs-2 thumb">
+          <a class="thumbnail" href="#">
+              <img class="img-responsive" src="./logo1.jpg" alt="" style="">
+          </a>
+      </div>
+      <div class="col-lg-2 col-md-2 col-xs-2 thumb">
+          <a class="thumbnail" href="#">
+              <img class="img-responsive" src="./logo2.png" alt="" style="">
+          </a>
+      </div>
+      <div class="col-lg-2 col-md-2 col-xs-2 thumb">
+          <a class="thumbnail" href="#">
+              <img class="img-responsive" src="./logo3.png" alt="" style="">
+          </a>
+      </div>
+      <div class="col-lg-2 col-md-2 col-xs-2 thumb">
+          <a class="thumbnail" href="#">
+              <img class="img-responsive" src="./logo4.png" alt="" style="">
+          </a>
+      </div>
+      <div class="col-lg-2 col-md-2 col-xs-2 thumb">
+          <a class="thumbnail" href="#">
+              <img class="img-responsive" src="./logo5.png" alt="" style="">
+          </a>
+      </div>
+      <div class="col-lg-2 col-md-2 col-xs-2 thumb">
+          <a class="thumbnail" href="#">
+              <img class="img-responsive" src="./logo6.png" alt="" style="">
+          </a>
+      </div>
+    </div>
+  </div> -->
+
+ <section class="py-6 py-md-8 ">
+      <div class="container">
+        <div style="font-weight: bold;" >Trusted By<br/><br/></div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Brand -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0">
+              <a class="thumbnail" href="#">
+              <img class="img-responsive" src="./logo1.jpg" alt="" style="">
+          </a></div>
+
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Brand -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0">
+          <a class="thumbnail" href="#">
+              <img class="img-responsive" src="./logo2.png" alt="" style="">
+          </a>            </div>
+
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Brand -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0">
+             <a class="thumbnail" href="#">
+              <img class="img-responsive" src="./logo3.png" alt="" style="">
+          </a></div>
+
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Brand -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0">
+            <a class="thumbnail" href="#">
+              <img class="img-responsive" src="./logo4.png" alt="" style="">
+          </a>           </div>
+
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Brand -->
+            <div class="img-fluid text-gray-600 mb-2 mb-md-0">
+           <a class="thumbnail" href="#">
+              <img class="img-responsive" src="./logo5.png" alt="" style="">
+          </a>
+
+          </div>
+          
+
+            <!-- Brand -->
+          
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+  <div class="container marketing" id="features">
+
+   
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-6">
+        <h2 class="featurette-heading fw-normal lh-1">Your Metaverse accessible <span class="text-body-secondary">From Anywhere. </span></h2>
+        <p class="lead">Users can visit the metaverse from their browser on any device.
+        VR experiences available inhouse and online.</p>
+      </div>
+      <div class="col-md-6">
+        <video width="100%;" height="auto" controls autoplay muted loop>
+          <source src="./features.mp4" type="video/mp4">
+         
+        Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-6 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Present the metaverse <span class="text-body-secondary">With AI humans</span></h2>
+        <p class="lead">Create metaverse experiences augmented by intelligent sales agent that explain all points of interest for your metaverse.</p>
+      </div>
+      <div class="col-md-6 order-md-1">
+       <video width="100%;" height="auto" controls autoplay muted loop>
+          <source src="./homepage.mp4" type="video/mp4">
+         
+        Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-6">
+        <h2 class="featurette-heading fw-normal lh-1">AI Humans to <span class="text-body-secondary">Create Multilingual Videos At Scale.</span></h2>
+        <p class="lead">Send personalised videos integrated with your sales pipeline or create the impact of your marketing content by converting it into Videos</p>
+      </div>
+      <div class="col-md-6">
+        <video width="100%;" height="auto" controls autoplay muted loop>
+          <source src="./homepage3.mp4" type="video/mp4">
+         
+        Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+     <div class="container col-xl-10 col-xxl-8 px-4 py-5" id="book">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Book A Demo</h1>
+        <p class="col-lg-10 fs-4">Transform your Enterprise with the power of both AI and Metaverse.</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Name</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Book Demo</button>
+          <hr class="my-4">
+          <small class="text-body-secondary"></small>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Know Us More</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><a href="#" style="text-decoration: none;color:white;">How we built the first ever Metaverse AI Human convocation ceremony?</a></h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>3d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><a href="#" style="text-decoration: none;color:white;">The Rise of AI Humans: Transforming the News Landscape.</a></h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>Pakistan</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>4d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><a href="#" style="text-decoration: none;color:white;">How the Metaverse and AI Transform Marketing</a></h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>California</smallhttps://youtu.be/zKpdA329pE0?t=54>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- /END THE FEATURETTES -->
+    <div class="container">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <p class="text-body-secondary">BlooAI © 2023</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#features" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+  </div><!-- /.container -->
+  
+
+  
+</main>
+  
+
+<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
+
